@@ -2,7 +2,9 @@
 const FooterRecetas = () => {
     return (
         <>
-            <h1>Footer</h1>
+         <footer className="text-center bg-success">
+    <p> &copy; Todos los derechos reservados</p>
+   </footer>
         </>
     );
 };

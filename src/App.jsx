@@ -5,6 +5,7 @@ import NavBarRecetas from './components/common/NavBarRecetas'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Administracion from './components/pages/Administracion';
 import Error404 from './components/pages/Error404';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
