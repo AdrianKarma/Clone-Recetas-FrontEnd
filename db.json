@@ -1,0 +1,58 @@
+{
+  "recetas": [
+    {
+      "nombreReceta": "Spaghetti a la Bolognesa",
+      "tiempo": "30 minutos",
+      "categoria": "Pastas",
+      "descripcion": "Deliciosos spaghetti con una salsa bolognesa casera.",
+      "preparacion": " Cocinar la pasta según las instrucciones del paquete. Mientras tanto, en una sartén grande, cocinar carne molida con cebolla y ajo hasta que estén dorados. Agregar salsa de tomate y dejar cocinar a fuego lento durante 20 minutos. Servir la salsa sobre la pasta cocida.",
+      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
+      "id": "1"
+    },
+    {},
+    {
+      "nombreReceta": "Ensalada César",
+      "tiempo": "15 minutos",
+      "categoria": "Ensaladas",
+      "descripcion": "Una clásica ensalada césar con pollo a la parrilla.",
+      "preparacion": " Cortar lechuga romana en trozos, agregar pollo a la parrilla cortado en tiras, crutones y aderezo césar. Mezclar bien y servir.",
+      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
+      "id": "2"
+    },
+    {
+      "nombreReceta": "Sopa de Tomate",
+      "tiempo": "45 minutos",
+      "categoria": "Sopas",
+      "descripcion": "Una reconfortante sopa de tomate casera.",
+      "preparacion": "  Saltear cebolla y ajo en una olla grande. Agregar tomates picados, caldo de verduras y hierbas. Cocinar a fuego lento durante 30 minutos. Licuar la sopa hasta que quede suave y servir caliente.",
+      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
+      "id": "3"
+    },
+    {
+      "nombreReceta": "Tacos de Pollo",
+      "tiempo": "30 minutos",
+      "categoria": "Comida Mexicana",
+      "descripcion": "Tacos de pollo sazonados con especias mexicanas.",
+      "preparacion": "Cocinar pechugas de pollo en una sartén con especias mexicanas hasta que estén cocidas. Cortar en tiras y servir en tortillas de maíz con cilantro, cebolla y limón.",
+      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
+      "id": "4"
+    },
+    {
+      "nombreReceta": "Cheesecake de Frutos Rojos",
+      "tiempo": "60 minutos",
+      "categoria": "Postres",
+      "descripcion": "Un delicioso cheesecake con una cobertura de frutos rojos.",
+      "preparacion": " CMezclar galletas trituradas con mantequilla derretida y presionar en el fondo de un molde para pastel. Batir queso crema con azúcar, vainilla y huevos. Verter sobre la base de galleta y hornear. Refrigerar y servir con una mezcla de frutos rojos.",
+      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
+      "id": "5"
+    }
+  ],
+
+  "usuarios": [
+    {
+      "email": "receta@gmail.com",
+      "password": "yosoy123!",
+      "id": "1"
+    }
+  ]
+}
