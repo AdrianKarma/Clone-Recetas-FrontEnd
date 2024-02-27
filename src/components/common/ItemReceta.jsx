@@ -8,7 +8,7 @@ const ItemReceta = ({recetas, setRecetas}) => {
   
   const borrarReceta = ()=>{
     Swal.fire({
-      title: "Estas seguro de Eliminar el producto?",
+      title: "Estas seguro de Eliminar la receta?",
       text: "No pruedes revertir este proceso",
       icon: "warning",
       showCancelButton: true,
@@ -22,8 +22,8 @@ const ItemReceta = ({recetas, setRecetas}) => {
       const respuesta = await borrarRecetaAPI(recetas.id)
       if (respuesta.status === 200){
         Swal.fire({
-          title: "Producto Eliminado!",
-          text: `El producto"${recetas.nombreReceta}"fue eliminado correctamente`,
+          title: "Receta Eliminada!",
+          text: `La receta"${recetas.nombreReceta}"fue eliminada correctamente`,
           icon: "success"
         });
         const recetasActualizadas= await leerRecetasAPI()
@@ -32,7 +32,7 @@ const ItemReceta = ({recetas, setRecetas}) => {
         else{
           Swal.fire({
             title: "Ocurrio un Error",
-            text: `El producto"${recetas.nombreReceta}"no fue eliminado  `,
+            text: `La receta"${recetas.nombreReceta}"no fue eliminada  `,
             icon: "error"
           });
         }

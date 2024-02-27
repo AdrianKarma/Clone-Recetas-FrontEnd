@@ -53,15 +53,15 @@ const FormularioReceta = ({editar, titulo}) => {
         const respuesta = await editarRecetaAPI(id, recetas);
         if (respuesta.status === 200) {
           Swal.fire({
-            title: "Producto Editado",
-            text: `el producto: ${recetas.nombreReceta} fue editado correctamente`,
+            title: "Receta Editado",
+            text: `la receta: ${recetas.nombreReceta} fue editada correctamente`,
             icon: "success",
           });
           navegacion("/administrador");
         } else {
           Swal.fire({
             title: "Error",
-            text: `error al editar el producto:${recetas.nombreReceta} , intente nuevamente`,
+            text: `error al editar la receta:${recetas.nombreReceta} , intente nuevamente`,
             icon: "error",
           });
         }
@@ -69,14 +69,14 @@ const FormularioReceta = ({editar, titulo}) => {
         const respuest = await CrearRecetaAPI(recetas);
         if (respuest.status === 201) {
           Swal.fire({
-            title: "Producto Creado",
-            text: `el producto: ${recetas.nombreReceta} fue creado correctamente`,
+            title: "Receta Creado",
+            text: `La Receta: ${recetas.nombreReceta} fue creado correctamente`,
             icon: "success",
           });
         } else {
           Swal.fire({
             title: "Error",
-            text: `error al crear el producto, intente nuevamente`,
+            text: `error al crear la receta, intente nuevamente`,
             icon: "error",
           });
         }
@@ -98,16 +98,16 @@ const FormularioReceta = ({editar, titulo}) => {
               type="text"
               placeholder="Ej: café"
               {...register("nombreReceta", {
-                required: "El nombre del producto es obligatorio",
+                required: "El nombre de la receta es obligatorio",
                 minLength: {
                   value: 2,
                   message:
-                    "debe ingresar como minimo 2 caracteres para el nombre del producto",
+                    "debe ingresar como minimo 2 caracteres para el nombrede la receta",
                 },
                 maxLength: {
                   value: 50,
                   message:
-                    "debe ingresar como maximo 50 caracteres para el nombre del producto",
+                    "debe ingresar como maximo 50 caracteres para el nombre de la receta",
                 },
               })}
             />
@@ -119,16 +119,16 @@ const FormularioReceta = ({editar, titulo}) => {
             <Form.Label>Duracion de la Receta*</Form.Label>
             <Form.Control
               type="text"
-              placeholder="ej: 1300"
+              placeholder="ej: 60"
               {...register("tiempo", {
-                required: "El precio del producto es obligatorio",
+                required: "El tiempo de preparacion es obligatorio",
                 min: {
-                  value: 50,
-                  message: "debe ingresar un valor mayor a $50",
+                  value: 1,
+                  message: "debe ingresar un valor mayor a 1",
                 },
                 max: {
-                  value: 25000,
-                  message: "debe ingresar un valor menor a $25.000",
+                  value: 120,
+                  message: "debe ingresar un valor menor a 120",
                 },
               })}
             />
@@ -155,10 +155,10 @@ const FormularioReceta = ({editar, titulo}) => {
               type="text"
               aria-label="Elige una Categoria"
               {...register("categoria", {
-                required: "Elija una categoria para el producto",
+                required: "Elija una categoria para la receta",
               })}
             >
-              <option>Open this select menu</option>
+              <option>Elige una Categoria</option>
               <option value="Ensaladas">Ensaladas</option>
               <option value="Pastas">Pastas</option>
               <option value="Postres">Postres</option>
@@ -168,22 +168,22 @@ const FormularioReceta = ({editar, titulo}) => {
               {errors.categoria?.message}
             </Form.Text>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="breve.form">
+          <Form.Group className="mb-3" controlId="descripcion.form">
             <Form.Label>Descripción*</Form.Label>
             <Form.Control
               as="textarea"
               rows={2}
               {...register("descripcion", {
-                required: "Ingrese una descripcion breve",
+                required: "Ingrese una descripcion ",
                 minLength: {
-                  value: 3,
+                  value: 5,
                   message:
-                    "Debe ingresar como minimo 3 caracteres para la descripcion breve",
+                    "Debe ingresar como minimo 5 caracteres para la descripcion ",
                 },
                 maxLength: {
-                  value: 30,
+                  value: 50,
                   message:
-                    "Debe ingresar como maximo 30 caracteres para la descripcion breve",
+                    "Debe ingresar como maximo 50 caracteres para la descripcion ",
                 },
               })}
             />
@@ -191,13 +191,13 @@ const FormularioReceta = ({editar, titulo}) => {
               {errors.descripcion?.message}
             </Form.Text>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="amplia.form">
+          <Form.Group className="mb-3" controlId="preparacion.form">
             <Form.Label>Preparacion*</Form.Label>
             <Form.Control
               as="textarea"
               rows={3}
               {...register("preparacion", {
-                required: "Ingrese una descripcion amplia",
+                required: "Ingrese la preparacion",
                 minLength: {
                   value: 50,
                   message:

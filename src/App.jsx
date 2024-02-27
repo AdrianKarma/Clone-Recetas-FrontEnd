@@ -7,6 +7,7 @@ import Administracion from './components/pages/Administracion';
 import Error404 from './components/pages/Error404';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FormularioReceta from './components/pages/FormularioReceta'
+import "bootstrap-icons/font/bootstrap-icons.css"
 
 
 function App() {
