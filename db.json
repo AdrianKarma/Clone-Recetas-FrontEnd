@@ -1,15 +1,6 @@
 {
   "recetas": [
     {
-      "nombreReceta": "Spaghetti a la Bolognesa",
-      "tiempo": "30 minutos",
-      "categoria": "Pastas",
-      "descripcion": "Deliciosos spaghetti con una salsa bolognesa casera.",
-      "preparacion": " Cocinar la pasta según las instrucciones del paquete. Mientras tanto, en una sartén grande, cocinar carne molida con cebolla y ajo hasta que estén dorados. Agregar salsa de tomate y dejar cocinar a fuego lento durante 20 minutos. Servir la salsa sobre la pasta cocida.",
-      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
-      "id": "1"
-    },
-    {
       "nombreReceta": "Ensalada César",
       "tiempo": "15 minutos",
       "categoria": "Ensaladas",
@@ -19,13 +10,13 @@
       "id": "2"
     },
     {
-      "nombreReceta": "Cheesecake de Frutos Rojos",
-      "tiempo": "60 minutos",
-      "categoria": "Postres",
-      "descripcion": "Un delicioso cheesecake con una cobertura de frutos rojos.",
-      "preparacion": " CMezclar galletas trituradas con mantequilla derretida y presionar en el fondo de un molde para pastel. Batir queso crema con azúcar, vainilla y huevos. Verter sobre la base de galleta y hornear. Refrigerar y servir con una mezcla de frutos rojos.",
+      "id": "2890",
+      "nombreReceta": "13123",
+      "tiempo": "3123",
       "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
-      "id": "5"
+      "categoria": "1",
+      "descripcion": "3123123123",
+      "preparacion": "3 1243531 423564 12533 461524 3615243 6512 436512 43561243"
     }
   ],
   "usuarios": [

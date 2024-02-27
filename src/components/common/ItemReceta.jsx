@@ -51,7 +51,7 @@ const ItemReceta = ({recetas, setRecetas}) => {
         <td className="align-middle">{recetas.categoria}</td>
         <td className="align-middle">
           <div className="d-flex justify-content-around">
-        <Button variant="warning" as={Link} to={`/administracion/editar/${recetas.id}`}><i className="bi bi-pencil-square"></i></Button>
+        <Button variant="warning" as={Link} to={`/administrador/editar/${recetas.id}`}><i className="bi bi-pencil-square"></i></Button>
           <Button variant="danger" onClick={borrarReceta}><i className="bi bi-trash"></i></Button>
           </div>
         </td>
