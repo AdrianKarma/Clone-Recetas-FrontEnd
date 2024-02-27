@@ -3,10 +3,10 @@
     {
       "nombreReceta": "Ensalada César",
       "tiempo": "15 minutos",
-      "categoria": "Ensaladas",
-      "descripcion": "Una clásica ensalada césar con pollo a la parrilla.",
-      "preparacion": " Cortar lechuga romana en trozos, agregar pollo a la parrilla cortado en tiras, crutones y aderezo césar. Mezclar bien y servir.",
       "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
+      "categoria": "Ensaladas",
+      "descripcion": "Una clásica ensalada c",
+      "preparacion": " Cortar lechuga romana en trozos, agregar pollo a la parrilla cortado en tiras, crutones y aderezo césar. Mezclar bien y servir.",
       "id": "2"
     },
     {
@@ -14,7 +14,7 @@
       "nombreReceta": "13123",
       "tiempo": "3123",
       "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
-      "categoria": "1",
+      "categoria": "Pastas",
       "descripcion": "3123123123",
       "preparacion": "3 1243531 423564 12533 461524 3615243 6512 436512 43561243"
     }

@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 import { useNavigate, useParams } from "react-router-dom";
 import { CrearRecetaAPI, editarRecetaAPI, obtenerRecetaAPI } from "../../helpers/queries";
 
-const FormularioReceta = (editar, titulo) => {
+const FormularioReceta = ({editar, titulo}) => {
   const {
     register,
     handleSubmit,
@@ -26,13 +26,18 @@ const FormularioReceta = (editar, titulo) => {
 
   const cargarDatosFormulario = async () => {
     const respuesta = await obtenerRecetaAPI(id);
-    if ((respuesta.status = 200)) {
+    if (respuesta.status === 200) {
       const recetaBuscada = await respuesta.json();
       console.log(recetaBuscada);
       setValue("nombreReceta", recetaBuscada.nombreReceta);
+      setValue("tiempo", recetaBuscada.tiempo);
+      setValue("categoria", recetaBuscada.categoria);
+      setValue("descripcion", recetaBuscada.descripcion);
+      setValue("preparacion", recetaBuscada.preparacion);
+      setValue("imagen", recetaBuscada.imagen);
 
 
-      
+
     } else {
       Swal.fire({
         title: "Error",
@@ -84,7 +89,7 @@ const FormularioReceta = (editar, titulo) => {
   return (
     <>
       <Container className="my-4">
-        <h1></h1>
+        <h1>{titulo}</h1>
         <hr />
         <Form onSubmit={handleSubmit(recetaValidada)}>
           <Form.Group className="mb-3" controlId="Receta.form">
@@ -154,9 +159,9 @@ const FormularioReceta = (editar, titulo) => {
               })}
             >
               <option>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="Ensaladas">Ensaladas</option>
+              <option value="Pastas">Pastas</option>
+              <option value="Postres">Postres</option>
             </Form.Select>
 
             <Form.Text className="text-danger">
