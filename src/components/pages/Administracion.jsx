@@ -45,7 +45,7 @@ catch(error){
       </thead>
       <tbody>
         {
-   recetas.map((recetas)=> <ItemReceta key={recetas.id} recetas={recetas}></ItemReceta>)
+   recetas.map((recetas)=> <ItemReceta key={recetas.id} recetas={recetas} setRecetas={setRecetas}></ItemReceta>)
         }
      
       

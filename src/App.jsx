@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Administracion from './components/pages/Administracion';
 import Error404 from './components/pages/Error404';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import FormularioReceta from './components/pages/FormularioReceta'
 
 
 function App() {
@@ -21,7 +21,8 @@ function App() {
     <Route exact path='/' element={<Inicio></Inicio>}></Route>    
     
     <Route exact path='administrador' element={<Administracion></Administracion>}></Route>
-    
+    <Route exact path='administrador/crear' element={<FormularioReceta></FormularioReceta>}></Route>
+    <Route exact path='administrador/crear' element={<FormularioReceta></FormularioReceta>}></Route>
    
     <Route exact path='*' element={<Error404></Error404>}></Route>
 

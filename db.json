@@ -9,7 +9,6 @@
       "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
       "id": "1"
     },
-  
     {
       "nombreReceta": "Ensalada César",
       "tiempo": "15 minutos",
@@ -18,24 +17,6 @@
       "preparacion": " Cortar lechuga romana en trozos, agregar pollo a la parrilla cortado en tiras, crutones y aderezo césar. Mezclar bien y servir.",
       "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
       "id": "2"
-    },
-    {
-      "nombreReceta": "Sopa de Tomate",
-      "tiempo": "45 minutos",
-      "categoria": "Sopas",
-      "descripcion": "Una reconfortante sopa de tomate casera.",
-      "preparacion": "  Saltear cebolla y ajo en una olla grande. Agregar tomates picados, caldo de verduras y hierbas. Cocinar a fuego lento durante 30 minutos. Licuar la sopa hasta que quede suave y servir caliente.",
-      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
-      "id": "3"
-    },
-    {
-      "nombreReceta": "Tacos de Pollo",
-      "tiempo": "30 minutos",
-      "categoria": "Comida Mexicana",
-      "descripcion": "Tacos de pollo sazonados con especias mexicanas.",
-      "preparacion": "Cocinar pechugas de pollo en una sartén con especias mexicanas hasta que estén cocidas. Cortar en tiras y servir en tortillas de maíz con cilantro, cebolla y limón.",
-      "imagen": "https://odibo.app/images/cM4dga2AwVWnBNFH.png",
-      "id": "4"
     },
     {
       "nombreReceta": "Cheesecake de Frutos Rojos",
@@ -47,7 +28,6 @@
       "id": "5"
     }
   ],
-
   "usuarios": [
     {
       "email": "receta@gmail.com",
