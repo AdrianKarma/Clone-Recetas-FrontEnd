@@ -159,9 +159,9 @@ const FormularioReceta = ({editar, titulo}) => {
               })}
             >
               <option>Elige una Categoria</option>
-              <option value="Ensaladas">Ensaladas</option>
-              <option value="Pastas">Pastas</option>
-              <option value="Postres">Postres</option>
+              <option value="ensaladas">ensaladas</option>
+              <option value="pastas">pastas</option>
+              <option value="postres">postres</option>
             </Form.Select>
 
             <Form.Text className="text-danger">
