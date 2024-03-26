@@ -19,7 +19,7 @@ const ItemReceta = ({recetas, setRecetas}) => {
     }).then ( async (result) => {
       if (result.isConfirmed) {
 
-      const respuesta = await borrarRecetaAPI(recetas.id)
+      const respuesta = await borrarRecetaAPI(recetas._id)
       if (respuesta.status === 200){
         Swal.fire({
           title: "Receta Eliminada!",
@@ -42,7 +42,7 @@ const ItemReceta = ({recetas, setRecetas}) => {
 
     return (
         <tr>
-        <td className="align-middle">{recetas.id}</td>
+        <td className="align-middle">{recetas._id}</td>
         <td className="align-middle">{recetas.nombreReceta} </td>
         <td className="align-middle">
           {recetas.tiempo}
@@ -51,7 +51,7 @@ const ItemReceta = ({recetas, setRecetas}) => {
         <td className="align-middle">{recetas.categoria}</td>
         <td className="align-middle">
           <div className="d-flex justify-content-around">
-        <Button variant="warning" as={Link} to={`/administrador/editar/${recetas.id}`}><i className="bi bi-pencil-square"></i></Button>
+        <Button variant="warning" as={Link} to={`/administrador/editar/${recetas._id}`}><i className="bi bi-pencil-square"></i></Button>
           <Button variant="danger" onClick={borrarReceta}><i className="bi bi-trash"></i></Button>
           </div>
         </td>

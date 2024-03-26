@@ -25,7 +25,7 @@ catch(error){
     return (
         <Container fluid className="my-4 d-flex flex-wrap ">
          {
-   recetas.map((recetas)=> <CardReceta key={recetas.id} recetas={recetas}></CardReceta>)
+   recetas.map((recetas)=> <CardReceta key={recetas._id} recetas={recetas}></CardReceta>)
         }
         </Container>
     );
